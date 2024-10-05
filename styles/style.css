@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 /* arreglar este */
-*{
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6
+p, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl
+td, article, aside, canvas, details, embed, figure, figcaption, footer{
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -329,7 +331,7 @@ body {
     margin-left: -106%;
 }
 
-.zoom-close .scaled #solar-system {
+.zoom-close.view-2D .scale-d #solar-system {
     font-size: 84%;
 }
 
@@ -341,7 +343,7 @@ body {
     margin-left: -145%;
 }
 
-.zoom-close.view-2D .scales #solar-system {
+.zoom-close.view-2D .scale-s #solar-system {
     font-size: 40%;
 }
 
@@ -353,10 +355,10 @@ body {
 .zoom-close .pos,
 .zoom-close .planet,
 .zoom-close .satelite,
-.zoom-close .ring{
-    animation-play-state: paused;
-    animation-duration: 0;
-    animation: none;
+.zoom-close .ring {
+    animation-play-state: paused !important;
+    animation-duration: 0 !important;
+    animation: none !important;
 }
 
 .zoom-close.view-2D .planet,
@@ -373,9 +375,12 @@ body {
 }
 
 .zoom-close .pos{
-    left: 100%;
-    top: 50%;
+    left: 100% !important;
+    top: 50% !important;
 }
+
+/* ........---------------- */
+/*  ----------------------- */
 
 #mercury .pos,
 #mercury .planet,
@@ -393,6 +398,11 @@ body {
 #earth .planet,
 #earth.orbit {
     animation-duration: 12.00021s;
+}
+
+#earth .orbit .pos,
+#earth .orbit{
+    animation-duration: 0.89764s;
 }
 
 #earth .pos,
