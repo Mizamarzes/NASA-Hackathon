@@ -371,7 +371,7 @@ body {
 }
 
 .zoom-close.view-3D .moon{
-    transform: rotateX(-90deg);
+    transform: rotateX(90deg);
 }
 
 .zoom-close .pos{
@@ -444,7 +444,7 @@ body {
 #neptune .pos,
 #neptune .planet,
 #neptune.orbit {
-    animation-duration: 1977.49584;
+    animation-duration: 1977.49584s;
 }
 
 
@@ -462,6 +462,10 @@ body {
 
 .scale-stretched #earth .planet{
     font-size: 3.92em;
+}
+
+.scale-stretched #earth .moon{
+    font-size: 1.2em;
 }
 
 .scale-stretched #mars .planet{
@@ -521,10 +525,6 @@ body {
     font-size: 1.47732em;
 }
 
-.scale-s #sun{
-    font-size: 417.3048em;
-}
-
 /* ---------- */
 
 .scale-s #sun{
@@ -547,10 +547,11 @@ body {
     font-size: 0.8226em;
 }
 
-.scale-s #earth .planet {
-    font-size: 2.0334em;
+.scale-s #mars .planet{
+    font-size: 2.0344em;
 }
 
-.scale-s #jupìter .planet{
+
+.scale-s #jupiter .planet{
     font-size: 41.9466em;
 }
